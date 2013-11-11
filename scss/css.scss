@@ -1,0 +1,14 @@
+@import 'normalize', 'main';
+@import 'vendor/bootstrap/bootstrap.min', 'vendor/bootstrap/bootstrap-responsive.min';
+@import 'compass';
+@import 'vendor/bourbon/bourbon';
+@import 'variables';
+
+body {
+	cursor: default;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#page {
+	
+}

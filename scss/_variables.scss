@@ -1,0 +1,43 @@
+/* colors */
+
+$black: #000;
+$white: #fff;
+
+	@function blacken($color, $percent, $i: 1) {
+		@while $i > 0 {
+			$color: mix(#000, $color, $percent);
+			$i: $i - 1;
+		}
+		@return $color;
+	}
+
+	@function whiten($color, $percent, $i: 1) {
+		@while $i > 0 {
+			$color: mix(#fff, $color, $percent);
+			$i: $i - 1;
+		}
+		@return $color;
+	}
+
+$lightblue: #8dd5fc;
+$darkbrown: #3a2d1f;
+$xdarkbrown: #20180f;
+$tan: #9e998e;
+
+/* fonts */
+
+// font-family: 'Open Sans', sans-serif;
+// 300,300italic,400,400italic,600,600italic,700,700italic,800,800italic
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+
+// font-family: 'Dancing Script', cursive;
+// 400,700
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:400);
+
+/**/
+
+$container-width: 940px;
+	$container-width_large-display: 1170px;
+$gutter-width: 20px;
+	$gutter-width_large-display: 30px;
+$line-height: 18px;
