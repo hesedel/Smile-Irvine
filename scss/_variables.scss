@@ -21,6 +21,7 @@ $white: #fff;
 
 $lightblue: #8dd5fc;
 $darkbrown: #3a2d1f;
+	$darkbrown2: #33281c;
 $xdarkbrown: #20180f;
 $tan: #9e998e;
 
@@ -28,7 +29,7 @@ $tan: #9e998e;
 
 // font-family: 'Open Sans', sans-serif;
 // 300,300italic,400,400italic,600,600italic,700,700italic,800,800italic
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 // font-family: 'Dancing Script', cursive;
 // 400,700
@@ -36,8 +37,6 @@ $tan: #9e998e;
 
 /**/
 
-$container-width: 940px;
-	$container-width_large-display: 1170px;
-$gutter-width: 20px;
-	$gutter-width_large-display: 30px;
+$container-width: 1124px;
+$gutter-width: 30px;
 $line-height: 18px;
