@@ -107,7 +107,7 @@ a {
 
 								a {
 									color: $lightblue;
-									background-color: $tan;
+									background-color: transparent;
 									@include background-image(none);
 									filter: none;
 								}
@@ -470,3 +470,90 @@ a {
 }
 
 // PAGE HOME END
+
+// PAGE
+
+.g-page {
+	background-color: $white;
+}
+
+.g-header {
+	background-color: $tan;
+	min-height: $line-height * 21;
+
+	h1 {
+		color: $white;
+		font-size: 4em;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 1.25em;
+		margin-top: $line-height * 4;
+		margin-bottom: $line-height * 2.5;
+
+		span {
+			font-size: 1.5em;
+			font-weight: 700;
+			display: block;
+		}
+
+	}
+
+	a {
+		color: $white;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: $line-height $gutter-width;
+		border: 1px solid $white;
+
+		&:hover {
+			text-decoration: none;
+			background-color: $tan;
+		}
+
+	}
+
+}
+
+.g-body {
+	padding-top: $line-height * 1.5;
+}
+
+.g-footer {
+	background-color: whiten($tan, 25%, 8);
+	padding-top: $line-height * 2;
+	padding-bottom: $line-height * 2;
+	border-top: 1px solid whiten($tan, 25%, 4);
+}
+
+.g-main {
+	width: $container-width - $gutter-width - 350px;
+	float: left;
+}
+
+.g-aside {
+	width: 350px;
+	float: right;
+}
+
+.g-h2 {
+	padding-bottom: $line-height;
+	border-bottom: 1px solid whiten($tan, 25%, 4);
+
+	h2 {
+		color: $lightblue;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	strong {
+		color: $tan;
+		font-size: .9em;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+}
+
+// PAGE END
