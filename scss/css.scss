@@ -4,6 +4,24 @@
 @import 'vendor/bourbon/bourbon';
 @import 'variables';
 
+.btn-primary {
+	color: $xdarkbrown;
+	font-weight: 700;
+	@include text-shadow(none);
+	text-transform: uppercase;
+	background-color: $lightblue;
+	@include background-image(none);
+	border-color: blacken($lightblue, 5%);
+	@include box-shadow(none);
+	@include transition(all 125ms ease-in);
+
+	&:hover {
+		background-color: $tan;
+		border-color: blacken($tan, 5%);
+	}
+
+}
+
 .container {
 	width: $container-width;
 	padding-right: $gutter-width;
@@ -57,14 +75,55 @@ a {
 				a {
 					color: $tan;
 					text-transform: uppercase;
+					background-color: transparent;
 				}
 
 				&:hover,
-				&.active {
+				&.active,
+				&.search {
 
 					a {
 						color: $lightblue;
 						text-decoration: none;
+						background-color: transparent;
+					}
+
+				}
+
+				&.dropdown {
+
+					.dropdown-menu {
+						top: $line-height;
+
+						li {
+							margin-right: 0;
+							float: none;
+
+							a {
+								color: $tan;
+							}
+
+							&:hover {
+
+								a {
+									color: $lightblue;
+									background-color: $tan;
+									@include background-image(none);
+									filter: none;
+								}
+
+							}
+
+						}
+
+					}
+
+					&:hover {
+
+						ul {
+							display: block;
+						}
+
 					}
 
 				}
@@ -124,20 +183,8 @@ a {
 		}
 
 		a {
-			color: $xdarkbrown;
-			font-weight: 700;
-			text-transform: uppercase;
-			background-color: $lightblue;
-			padding: #{$line-height / 2} #{$gutter-width / 2};
-			@include border-radius(8px);
 			margin-left: $gutter-width;
 			vertical-align: top;
-
-			&:hover {
-				text-decoration: none;
-				background-color: $tan;
-			}
-
 		}
 
 	}
@@ -175,7 +222,7 @@ a {
 			color: $lightblue;
 			font-family: 'Dancing Script', cursive;
 			font-size: 2.5em;
-			font-weight: normal;
+			font-weight: 400;
 		}
 
 		p {
@@ -308,3 +355,118 @@ a {
 }
 
 // FOOTER END
+
+// PAGES
+
+// PAGE HOME
+
+#page-home {
+
+	.slideshow {
+		background-color: $tan;
+		min-height: 498px;
+	}
+
+	.about {
+		background-color: $darkbrown2;
+		background-image: url(/img/bkg-florians.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		min-height: $line-height * 24;
+		padding-top: $line-height * 2;
+
+		.row-1 {
+
+			.col-1,
+			.col-2,
+			.col-3 {
+				width: 356px;
+				float: left;
+			}
+
+			.col-1,
+			.col-2 {
+				margin-right: $gutter-width - 2px;
+			}
+
+			.img {
+				background-color: rgba($xdarkbrown, .5);
+				padding: 6px;
+				@include border-radius(4px);
+				margin-top: -6px;
+				margin-left: -6px;
+				display: inline-block;
+
+				img {
+					display: block;
+				}
+
+			}
+
+			h2 {
+				color: $lightblue;
+				font-family: 'Dancing Script', cursive;
+				font-weight: 400;
+				margin-bottom: 0;
+			}
+
+			strong {
+				color: $tan;
+				font-size: .9em;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+
+			p {
+				color: $white;
+				margin-top: $line-height / 2;
+			}
+
+			.btn {
+				margin-top: $line-height / 2;
+			}
+
+		}
+
+	}
+
+	.testimonials {
+		background-color: $lightblue;
+		background-image: url(/img/bkg-testimonials.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		min-height: $line-height * 12;
+		padding-top: $line-height * 2;
+
+		h2 {
+			color: $white;
+			font-family: 'Dancing Script', cursive;
+			font-size: 5em;
+			font-weight: 400;
+			text-align: center;
+		}
+
+		p {
+			color: $darkbrown;
+			font-family: Georgia, serif;
+			font-size: 1.5em;
+			font-style: italic;
+			text-align: center;
+			line-height: $line-height * 1.75;
+			margin-top: $line-height * 2;
+
+			.quote {
+				color: $white;
+			}
+
+			.author {
+				font-size: .75em;
+			}
+
+		}
+
+	}
+
+}
+
+// PAGE HOME END

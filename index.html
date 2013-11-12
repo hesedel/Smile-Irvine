@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title></title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=0.27">
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -28,14 +28,21 @@
 			<div class="container">
 				<a id="logo" href="#"><img alt="logo" src="img/logo.png"></a>
 				<nav>
-					<ul>
+					<ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Sub-menu Item 1</a></li>
+								<li><a href="#">Sub-menu Item 2</a></li>
+								<li><a href="#">Sub-menu Item 3</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Services</a></li>
 						<li><a href="#">Technology</a></li>
 						<li><a href="#">Testimonials</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#"><i class="fa fa-search"></i></a></li>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -43,6 +50,44 @@
 		<!-- HEADER END -->
 
 		<!-- PAGE HOME -->
+		<div id="page-home">
+			<div class="slideshow">
+				<div class="container">...</div>
+			</div>
+			<div class="about">
+				<div class="container">
+					<div class="row-1">
+						<div class="col-1">
+							<div class="img"><img alt="About" src="img/about.jpg"></div>
+							<h2>About Dr Shawn Loo</h2>
+							<strong>Learn more about Dr. Loo and his team</strong>
+							<p>Here at Distinctive Dental we strive to build lasting relationships with each one of our patients and to create a distinctive dental experience that will change their perspective of dentistry.</p>
+							<a class="btn btn-primary" href="#">Read More</a>
+						</div>
+						<div class="col-2">
+							<div class="img"><img alt="Services" src="img/services.jpg"></div>
+							<h2>Dental Services</h2>
+							<strong>We offer a range of dental services</strong>
+							<p>Our mission is to provide our patients with the latest proven technology, most minimal &amp; conservative techniques and the best dental materials available today.</p>
+							<a class="btn btn-primary" href="#">Read More</a>
+						</div>
+						<div class="col-3">
+							<div class="img"><img alt="Technology" src="img/technology.jpg"></div>
+							<h2>Distinctive Technology</h2>
+							<strong>We offer a range of dental services</strong>
+							<p>Here at Distinctive Dental we strive to build lasting relationships with each one of our patients and to create a distinctive dental experience that will change their perspective of dentistry.</p>
+							<a class="btn btn-primary" href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="testimonials">
+				<div class="container">
+					<h2>What Customers are Saying...</h2>
+					<p><span class="quote">&#8220;</span> Everyone is Awesome! Dr. Loo is great. He always takes the time to explain things and made me feel comfortable and informed. Everyone from the receptionist to the dentist made sure I had a great experience. <span class="quote">&#8221;</span><br><span class="author">- S.G.</span></p>
+				</div>
+			</div>
+		</div>
 		<!-- PAGE HOME END -->
 
 		<!-- CONTACT -->
@@ -63,7 +108,7 @@
 					</div>
 				</div>
 				<div class="row-2">
-					<strong>We'd Love to Hear From You.</strong> <a href="#">Schedule a Visit</a>
+					<strong>We'd Love to Hear From You.</strong> <a class="btn btn-primary" href="#">Schedule a Visit</a>
 				</div>
 			</div>
 		</div>
@@ -126,6 +171,7 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
 
