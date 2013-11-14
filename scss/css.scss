@@ -474,7 +474,10 @@ a {
 // PAGE
 
 .g-page {
-	background-color: $white;
+	background-color: $darkbrown2;
+	//background-image: url(/img/bkg-florians.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
 }
 
 .g-header {
@@ -516,28 +519,163 @@ a {
 
 .g-body {
 	padding-top: $line-height * 1.5;
+	padding-bottom: $line-height * 3;
 }
 
 .g-footer {
-	background-color: whiten($tan, 25%, 8);
+	background-color: $lightblue;
+	background-image: url(/img/bkg-testimonials.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
 	padding-top: $line-height * 2;
 	padding-bottom: $line-height * 2;
 	border-top: 1px solid whiten($tan, 25%, 4);
+
+	.row-1 {
+		@include clearfix;
+
+		.col-1 {
+			width: 48%;
+			padding-right: 2%;
+			float: left;
+		}
+
+		.col-2 {
+			width: 48%;
+			padding-left: 2%;
+			float: left;
+		}
+
+	}
+
+	strong {
+		color: $white;
+		font-family: 'Dancing Script', cursive;
+		font-size: 2.5em;
+		font-weight: 400;
+	}
+
+	p {
+		color: $darkbrown;
+		margin-top: $line-height / 2;
+
+		a {
+			color: $darkbrown;
+			font-weight: 700;
+		}
+
+	}
+
 }
 
 .g-main {
 	width: $container-width - $gutter-width - 350px;
 	float: left;
+
+	h3 {
+		color: $lightblue;
+		font-family: 'Dancing Script', cursive;
+		font-weight: 400;
+	}
+
+	img {
+
+		&.border {
+			border: 5px solid $white;
+		}
+
+		&.float-left {
+			margin-right: $gutter-width;
+			margin-bottom: $line-height * 1.5;
+			float: left;
+		}
+
+	}
+
+	p {
+		color: $white;
+	}
+
+	.g-box {
+		background-color: mix($tan, $darkbrown2);
+		padding: $line-height #{$gutter-width / 2};
+		//border: 1px solid $tan;
+		@include border-radius(4px);
+		margin-top: $line-height * 2;
+		margin-bottom: $line-height * 2;
+
+		h3 {
+			margin-top: 0;
+		}
+
+	}
+
+	.g-tiles {
+		margin-right: -$gutter-width;
+		@include clearfix;
+
+		.tile {
+			width: 228px;
+			margin-right: $gutter-width;
+			margin-bottom: $line-height;
+			float: left;
+
+			.img {
+				height: $line-height * 6.5;
+				margin-bottom: $line-height;
+				overflow: hidden;
+
+				img {
+
+				}
+
+			}
+
+			strong {
+				color: $lightblue;
+				font-size: 1.25em;
+				font-weight: 400;
+				text-transform: uppercase;
+				margin-bottom: $line-height / 2;
+				display: block;
+			}
+
+		}
+
+	}
+
 }
 
 .g-aside {
 	width: 350px;
 	float: right;
+
+	h3 {
+		color: $lightblue;
+		font-family: 'Dancing Script', cursive;
+		font-weight: 400;
+	}
+
+	p {
+		color: $tan;
+
+		strong {
+			color: $lightblue;
+			font-weight: 700;
+		}
+
+		span {
+			color: $white;
+		}
+
+	}
+
 }
 
 .g-h2 {
 	padding-bottom: $line-height;
-	border-bottom: 1px solid whiten($tan, 25%, 4);
+	border-bottom: 1px solid $tan;
+	margin-bottom: $line-height * 2;
 
 	h2 {
 		color: $lightblue;
