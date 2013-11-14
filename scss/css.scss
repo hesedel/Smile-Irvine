@@ -12,7 +12,7 @@
 	background-color: $lightblue;
 	@include background-image(none);
 	border-color: blacken($lightblue, 5%);
-	@include box-shadow(none);
+	@include box-shadow(rgba($black, .25) 1px 1px 2px);
 	@include transition(all 125ms ease-in);
 
 	&:hover {
@@ -52,6 +52,8 @@ a {
 	background-position: center top;
 	background-repeat: no-repeat;
 	height: $line-height * 5;
+	position: relative;
+		z-index: 2;
 
 	#logo {
 		height: $line-height * 5;
@@ -365,6 +367,58 @@ a {
 	.slideshow {
 		background-color: $tan;
 		min-height: 498px;
+		position: relative;
+		overflow: hidden;
+
+		.g-slideshow {
+			width: $container-width + ($gutter-width * 2);
+			height: 100%;
+			margin-left: -(($container-width + ($gutter-width * 2)) / 2);
+			position: absolute;
+				left: 50%;
+
+			img {
+				position: absolute;
+				@include opacity(0);
+				@include transition(all 5000ms);
+
+				&.shown {
+					@include opacity(1);
+				}
+
+			}
+
+		}
+
+		.left {
+			text-align: center;
+			width: 50%;
+			padding-top: $line-height * 9;
+			position: relative;
+				z-index: 1;
+		}
+
+		span {
+			color: $white;
+			font-size: 2em;
+			font-weight: 300;
+			text-transform: uppercase;
+			display: block;
+		}
+
+		h1 {
+			color: $white;
+			font-family: 'Dancing Script', cursive;
+			font-size: 4.75em;
+			font-weight: 400;
+			margin-top: $line-height * 1.5;
+		}
+
+		a {
+			padding: #{$line-height / 2} #{$gutter-width / 2};
+			margin-top: $line-height * 1.5;
+		}
+
 	}
 
 	.about {
@@ -483,6 +537,18 @@ a {
 .g-header {
 	background-color: $tan;
 	min-height: $line-height * 21;
+	position: relative;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		position: absolute;
+			top: -50%;
+	}
+
+	.container {
+		position: relative;
+	}
 
 	h1 {
 		color: $white;

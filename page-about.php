@@ -2,6 +2,7 @@
 <div class="g-page" id="page-about">
 
 	<header class="g-header">
+		<img src="img/home-slide-1.jpg">
 		<div class="container">
 			<h1>Meet Dr. <span>Shawn Loo</span></h1>
 			<a href="#">Make an Appointment</a>

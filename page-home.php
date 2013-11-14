@@ -1,7 +1,18 @@
 <!-- PAGE HOME -->
 <div id="page-home">
 	<div class="slideshow">
-		<div class="container">...</div>
+		<div class="container">
+			<div class="g-slideshow">
+				<img src="img/home-slide-1.jpg">
+				<img src="img/home-slide-2.jpg">
+				<img src="img/home-slide-3.jpg">
+			</div>
+			<div class="left">
+				<span>Synergy of</span>
+				<h1>Technique &amp; Artistry</h1>
+				<a class="btn btn-primary" href="#">Schedule a Visit</a>
+			</div>
+		</div>
 	</div>
 	<div class="about">
 		<div class="container">

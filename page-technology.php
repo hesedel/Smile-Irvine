@@ -2,6 +2,7 @@
 <div class="g-page" id="page-technology">
 
 	<header class="g-header">
+		<img src="img/home-slide-2.jpg">
 		<div class="container">
 			<h1>How the Magic <span>Happens</span></h1>
 			<a href="#">Make an Appointment</a>
