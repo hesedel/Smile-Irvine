@@ -57,6 +57,7 @@
 
 			</div>
 			<aside class="g-aside">
+				<div class="map"></div>
 				<h3>Distinctive Dental</h3>
 				<p>4030 Barranca Pkwy, Suite 220<br>Irvine, CA 92604 <a href="#">Map ›</a></p>
 				<p>

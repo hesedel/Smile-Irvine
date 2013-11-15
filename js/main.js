@@ -1,5 +1,13 @@
 $(function() {
 	slideshow(0);
+
+	$(window).resize(function() {
+		$('img', '.g-slideshow, .g-header').each(function() {
+			$(this).css( {
+				'margin-top': -($(this).height() / 2)
+			});
+		});
+	}).resize();
 });
 
 function slideshow(i) {

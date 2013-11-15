@@ -371,16 +371,21 @@ a {
 		overflow: hidden;
 
 		.g-slideshow {
-			width: $container-width + ($gutter-width * 2);
-			height: 100%;
-			margin-left: -(($container-width + ($gutter-width * 2)) / 2);
+			//width: $container-width + ($gutter-width * 2);
+			//height: 100%;
+			//margin-left: -(($container-width + ($gutter-width * 2)) / 2);
 			position: absolute;
-				left: 50%;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
 
 			img {
+				width: 100%;
 				position: absolute;
+					top: 50%;
 				@include opacity(0);
-				@include transition(all 5000ms);
+				@include transition(opacity 5000ms);
 
 				&.shown {
 					@include opacity(1);
@@ -543,7 +548,7 @@ a {
 	img {
 		width: 100%;
 		position: absolute;
-			top: -50%;
+			top: 50%;
 	}
 
 	.container {
@@ -664,7 +669,7 @@ a {
 
 	.g-box {
 		background-color: mix($tan, $darkbrown2);
-		padding: $line-height #{$gutter-width / 2};
+		padding: $line-height $gutter-width;
 		//border: 1px solid $tan;
 		@include border-radius(4px);
 		margin-top: $line-height * 2;
@@ -672,6 +677,14 @@ a {
 
 		h3 {
 			margin-top: 0;
+		}
+
+		.video {
+			background-color: $tan;
+			width: 200px;
+			height: $line-height * 6.5;
+			margin-left: $gutter-width;
+			float: right;
 		}
 
 	}
@@ -715,6 +728,12 @@ a {
 .g-aside {
 	width: 350px;
 	float: right;
+
+	.map {
+		background-color: $tan;
+		height: $line-height * 10;
+		overflow: hidden;
+	}
 
 	h3 {
 		color: $lightblue;

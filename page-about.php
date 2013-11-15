@@ -21,12 +21,14 @@
 				<p>Dr. Loo next attended the nationally recognized University of Southern California School of Dentistry where he earned his Doctorate of Dental Surgery. After graduating, he then served part time on the USC Restorative Faculty teaching the art of crowns, bridges and cosmetic dentistry.</p>
 				<p>He has also been an instructor for one of the world's leading cosmetic centers that focuses on teaching other dentists how to perform smile makeovers.</p>
 				<div class="g-box">
+					<div class="video"></div>
 					<h3>America's Top Dentist</h3>
 					<p>In 2009, Dr. Loo was recognized as one of "America's Top Dentist". Recently, he was also nominated as one of the best general and cosmetic dentist in Orange and Los Angeles County by the "Best of LA" TV program. <a href="#">Watch Interview ›</a></p>
 				</div>
 				<p>Dr. Loo's commitment to excellence is evident by his ongoing efforts to receive certifications and continuing education in the latest advancements in dentistry. His main goal is to provide cutting edge dentistry including minimal preparation cosmetic dentistry, implant dentistry and invisalign orthodontics. <a href="#">See our Philosophy ›</a></p>
 			</div>
 			<aside class="g-aside">
+				<div class="map"></div>
 				<h3>Distinctive Dental</h3>
 				<p>4030 Barranca Pkwy, Suite 220<br>Irvine, CA 92604 <a href="#">Map ›</a></p>
 				<p>
